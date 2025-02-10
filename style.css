@@ -1,0 +1,125 @@
+/* Hero Section */
+.hero {
+    background-image: url('images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+}
+
+/* Hero Section Text Styling */
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeInUp 2s ease-out;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-top: 20px;
+    font-weight: 400;
+    animation: fadeInUp 3s ease-out;
+}
+
+/* Button Styling */
+.btn-custom {
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    border: none;
+    padding: 15px 25px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: background 0.3s ease-in-out, transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-custom:hover {
+    background: linear-gradient(45deg, #0056b3, #003f7f);
+    transform: scale(1.1);
+    box-shadow: 0px 4px 20px rgba(0, 123, 255, 0.6);
+    color: #fff;
+}
+
+/* Subscribe Form Styling */
+#subscribe {
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin-top: -50px;
+    animation: fadeInUp 1s ease-out;
+}
+
+#subscribe .form-control {
+    max-width: 300px;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    border: 2px solid #ddd;
+    transition: border-color 0.3s;
+}
+
+#subscribe .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#subscribe button {
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    border: none;
+    padding: 15px 25px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: background 0.3s ease-in-out, transform 0.3s, box-shadow 0.3s;
+}
+
+#subscribe button:hover {
+    background: linear-gradient(45deg, #0056b3, #003f7f);
+    transform: scale(1.1);
+    box-shadow: 0px 4px 20px rgba(0, 123, 255, 0.6);
+    color: #fff;
+}
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Apply Animation to Hero Section */
+.animated.fadeInUp {
+    animation: fadeInUp 1.5s ease-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .input-field {
+        max-width: 250px;
+    }
+}
